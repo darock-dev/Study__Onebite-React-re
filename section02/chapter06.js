@@ -24,20 +24,21 @@ let keys = Object.keys(person);
 
 for (let key of keys) {
   const value = person[key];
-  // console.log(key, value);
+  // console.log(key, value); //  name Dova, age 36, hobby 유튜브시청
 }
 
 // 2) Object.values 사용
 // => 객체에서 value 값들만 뽑아서 새로운 배열로 반환
 let values = Object.values(person);
 for (let value of values) {
-  // console.log(value);
+  // console.log(value);  // Dova, 36, 유튜브시청
 }
 
 // 3) for in 사용
 for (let key in person) {
   const value = person[key];
-  console.log(key, value);
+  console.log(key, value); // name Dova, age 36, hobby 유튜브시청
 }
 
-// * for of 반복분은 배열에만 사용 가능, for in 은 객체에만 사용가능
+// for of - 배열에 사용, key를 순회(객체의 속성을 꺼낼 때 적합)
+// for in - 객체에 사용, value를 순회(배열 등 순서가 있는 자료형의 값을 꺼낼 때 적합)
